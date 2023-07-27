@@ -1,0 +1,14 @@
+.overlay {
+    background-color: $overlay-color;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    z-index: $z-index-inactive-overlay;
+    transition: opacity 0.3s;
+}
+
+.overlay.active{
+    z-index: $z-index-overlay;
+    opacity: 1;
+}

@@ -1,0 +1,120 @@
+.featured{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $terciary-color;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.featured .featured-title h2{
+    text-align: center;
+    font-family: $font-stack;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.featured .featured-description p{
+    margin-top: 2%;
+    font-family: $font-stack;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.featured .featured-elements{
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 10%;
+    gap: 5rem;
+}
+
+.featured .featured-element{
+    background-color: $secondary-color;
+    border-radius: 2rem;
+    width: 100%;
+    padding: 3%;
+}
+
+.featured .featured-element .featured-element-image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.featured .featured-element .featured-element-image svg{
+    width: 39%;
+}
+
+.featured .featured-element .featured-element-title h3{
+    text-align: center;
+    font-family: $font-stack;
+    font-size: 2rem;
+}
+
+.featured .featured-element .featured-element-description p{
+
+    text-align: center;
+    font-family: $font-stack;
+    margin: 3%;
+    
+}
+
+.featured .featured-desplegable {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 5vh;
+    background-color: aliceblue;
+    padding: 0.75% 5%;
+    margin: 2% 30%;
+    border-radius: 1rem;
+}
+
+.featured .featured-desplegable.active {
+    height:15vh;
+}
+
+.featured .featured-desplegable-visible {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured .featured-desplegable-visible-title {
+
+}
+
+.featured .featured-desplegable-visible-button button {
+    border-style: none;
+    background-color: aliceblue;
+}
+
+.featured .featured-desplegable-visible-button button svg{
+    width: 2rem;
+    cursor: pointer;
+    border-style: none;
+    
+    
+}
+
+.featured .featured-desplegable-visible-button.active button svg{
+    transform:rotate(180deg);
+    
+}
+
+.featured .featured-desplegable-novisible {
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.featured .featured-desplegable-novisible.active {
+    overflow: visible;
+    
+}
